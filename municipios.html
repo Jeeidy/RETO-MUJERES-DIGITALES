@@ -32,7 +32,7 @@
             <ul class="navbar-nav fs-5 justify-content-center">
               <li class="nav-item p-3 py-md-1"><a href="principal.html" class="nav-link">.</a></li>
               <li class="nav-item p-3 py-md-1"><a href="municipios.html" class="nav-link">Municipios y Manzanas</a></li>
-              <li class="nav-item p-3 py-md-1"><a href="manzanas.html" class="nav-link">.</a></li>
+              <li class="nav-item p-3 py-md-1"><a href="servicios.html" class="nav-link">Servicios</a></li>
               <li class="nav-item p-3 py-md-1"><a href="grafos.html" class="nav-link">.</a></li>
             </ul>
 
@@ -68,7 +68,18 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          Formulario
+          
+          <!--Formulario-->
+          <label for="exampleDataList" class="form-label">Cantidad de Manzanas</label>
+<input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+<datalist id="datalistOptions">
+  <option value="0-5 Manzanas">
+  <option value="6-10 Manzanas">
+  <option value="11-15 Manzanas">
+  <option value="16-20 Manzanas">
+  <option value="Más Manzanas">
+</datalist>
+          <!--Formulario-->
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
