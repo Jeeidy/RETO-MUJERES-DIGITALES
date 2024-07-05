@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perfil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+
+  <!--nav-->
+<nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/logo.png" width="78" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+       
+        <div class="offcanvas-body">
+            <ul class="navbar-nav fs-5 justify-content-center">
+              <li class="nav-item p-3 py-md-1"><a href="principal.html" class="nav-link">.</a></li>
+              <li class="nav-item p-3 py-md-1"><a href="municipios.html" class="nav-link">Municipios y Manzanas</a></li>
+              <li class="nav-item p-3 py-md-1"><a href="servicios.html" class="nav-link">Servicios</a></li>
+              <li class="nav-item p-3 py-md-1"><a href="perfil.html" class="nav-link">Perfil</a></li>
+            </ul>
+
+            <div class="sidebar-footer d-flex justify-content-center-start">
+                <a href="index.html" class="btn btn-danger">
+                    Salir
+                </a>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </nav>
+  <!--nav-->
+
+  
+  <br><br><br>
+  <!--tittle-->
+  <p class="h1 text-center">PERFIL</p>
+   <!--tittle-->
+
+   <!-- Información del perfil de la mujer cuidadora -->
+<div class="container">
+    <h2>Perfil de la Mujer Cuidadora</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="img/perfil-mujer.jpg" alt="Imagen de perfil" class="img-fluid">
+      </div>
+      <div class="col-md-8">
+        <h3>Nombre:  Pepita</h3>
+        <p>Apellido: Cenizas</p>
+        <p>Correo electrónico: pepita15@gmail.com</p>
+        <p>Teléfono: 1234567890</p>
+
+        <!--Botón Editar perfil-->
+        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Editar Perfil
+        </button>
+
+         <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5" id="exampleModalLabel">Editar Perfil</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <!--formulario-->
+    <div class="container">
+    
+    <form>
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" class="form-control" id="nombre" value=" nombre ">
+      </div>
+      <div class="form-group">
+        <label for="apellido">Apellido</label>
+        <input type="text" class="form-control" id="apellido" value=" apellido ">
+      </div>
+      <div class="form-group">
+        <label for="correo">Correo electrónico</label>
+        <input type="email" class="form-control" id="correo" value=" correo ">
+      </div>
+      <div class="form-group">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" class="form-control" id="telefono" value=" telefono ">
+      </div>
+    </form>
+  </div>
+      <!--formulario-->
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+      <button type="button" class="btn btn-primary">Registrar</button>
+    </div>
+  </div>
+</div>
+</div>
+<!--Modal-->
+<!-- Botón Editar perfil-->
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+
+  <!-- Formulario para proponer la manzana, servicio y día y hora de asistencia -->
+<div class="container">
+    <h2>Propuestas de Asistencia</h2>
+    <form>
+      <div class="form-group">
+        <label for="manzana">Manzana</label>
+        <select class="form-control" id="manzana">
+          <option value="">Seleccione una manzana</option>
+          <!-- Opciones de manzanas -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="servicio">Servicio</label>
+        <select class="form-control" id="servicio">
+          <option value="">Seleccione un servicio</option>
+          <!-- Opciones de servicios -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="dia">Día</label>
+        <select class="form-control" id="dia">
+          <option value="">Seleccione un día</option>
+          <!-- Opciones de días -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="hora">Hora</label>
+        <select class="form-control" id="hora">
+          <option value="">Seleccione una hora</option>
+          <!-- Opciones de horas -->
+        </select>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary">Proponer Asistencia</button>
+    </form>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
